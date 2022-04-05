@@ -1,7 +1,7 @@
 replaceText(document.body)
 // recursive function that loops through every element until it finds the word "moist"
 function replaceText(element) {
-  // loops through child nodes & calls replaceMoist function for each child node
+  // loops through child nodes & calls replaceText function for each child node
   if (element.hasChildNodes()) {
     element.childNodes.forEach(replaceText)
   // if there are no children, check if in a text node
